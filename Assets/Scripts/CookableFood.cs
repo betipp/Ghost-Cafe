@@ -15,9 +15,11 @@ public class CookableFood : MonoBehaviour
 
     void OnCollisionEnter(Collision collisionInfo)
     {
+        print("truee" + collisionInfo.gameObject.tag);
         if (collisionInfo.gameObject.tag == cookingStation)
         {
             cooking = true;
+
         }
     }
     void OnCollisionExit(Collision collisionInfo)
@@ -32,6 +34,7 @@ public class CookableFood : MonoBehaviour
     {
         if (cooking && !isCooked)
         {
+            print("cooking ");
 
             cookingTime += Time.deltaTime;
             if (cookingTime >= timeToCook)
