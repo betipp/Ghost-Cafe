@@ -13,7 +13,11 @@ public class PourableDrink : MonoBehaviour
     public string prepStation;
     public GameObject liquid;
 
-    public GameObject coffeeMachine;
+    GameObject coffeeMachine;
+    void Start()
+    {
+        coffeeMachine = GameObject.Find("CoffeeMachine");
+    }
 
 
     void OnTriggerEnter(Collider collisionInfo)
