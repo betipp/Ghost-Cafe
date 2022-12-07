@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Grill
   - CoffeeMachine
+  - Knife
+  - Hand
   layers:
   - Default
   - TransparentFX
