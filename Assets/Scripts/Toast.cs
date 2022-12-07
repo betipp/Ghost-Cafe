@@ -6,9 +6,6 @@ using UnityEngine;
 
 public class Toast : MonoBehaviour
 {
-
-    private bool grabbed = false;
-
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Knife")
@@ -16,18 +13,6 @@ public class Toast : MonoBehaviour
             print(checkJellyType(other.gameObject));
             EnableChildWithName(this.gameObject, checkJellyType(other.gameObject));
         }
-        if (other.gameObject.tag == "Hand" && !grabbed)
-        {
-            GameObject parent = this.transform.parent.gameObject;
-            GameObject newObject = Instantiate(parent, parent.gameObject.transform.position, Quaternion.identity);
-            newObject.transform.localScale = parent.gameObject.transform.localScale;
-            newObject.transform.position = new Vector3(6.924f, 2.344f, 1.735f);
-            newObject.gameObject.GetComponent<Rigidbody>().isKinematic = false;
-            newObject.gameObject.GetComponent<Rigidbody>().useGravity = true;
-            grabbed = true;
-
-        }
-
     }
 
     void EnableChildWithName(GameObject obj, string name)
