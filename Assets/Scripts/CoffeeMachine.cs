@@ -12,7 +12,6 @@ public class CoffeeMachine : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("collided with object");
         pouring = true;
         StartCoroutine(SetFalse(5));
         coffee.Play();

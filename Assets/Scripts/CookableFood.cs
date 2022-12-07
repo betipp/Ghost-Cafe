@@ -15,7 +15,6 @@ public class CookableFood : MonoBehaviour
 
     void OnCollisionEnter(Collision collisionInfo)
     {
-        print("truee" + collisionInfo.gameObject.tag);
         if (collisionInfo.gameObject.tag == cookingStation)
         {
             cooking = true;
