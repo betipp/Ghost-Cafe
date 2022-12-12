@@ -14,6 +14,7 @@ public class JellyContainer : MonoBehaviour
         if (other.gameObject.tag == "Knife")
         {
             EnableChildWithName(other.gameObject, jellyType);
+            AudioManager.Play("JellySplat");
         }
 
 

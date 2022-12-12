@@ -14,9 +14,13 @@ public class PourableDrink : MonoBehaviour
     public GameObject liquid;
 
     GameObject coffeeMachine;
+
+    GameObject GameManager;
+
     void Start()
     {
         coffeeMachine = GameObject.Find("CoffeeMachine");
+        GameManager = GameObject.Find("GameManager");
     }
 
 
@@ -25,7 +29,6 @@ public class PourableDrink : MonoBehaviour
         if (collisionInfo.gameObject.tag == prepStation)
         {
             cooking = true;
-
         }
     }
     void OnTriggerExit(Collider collisionInfo)
@@ -41,8 +44,6 @@ public class PourableDrink : MonoBehaviour
 
         if (cooking && !isCooked && coffeeMachine.GetComponent<CoffeeMachine>().pouring)
         {
-
-
             cookingTime += Time.deltaTime;
             if (cookingTime >= timeToCook)
             {

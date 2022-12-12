@@ -10,8 +10,8 @@ public class Toast : MonoBehaviour
     {
         if (other.gameObject.tag == "Knife")
         {
-            print(checkJellyType(other.gameObject));
             EnableChildWithName(this.gameObject, checkJellyType(other.gameObject));
+            AudioManager.Play("JellySplat");
         }
     }
 

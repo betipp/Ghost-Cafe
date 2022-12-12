@@ -15,10 +15,12 @@ public class CoffeeMachine : MonoBehaviour
         pouring = true;
         StartCoroutine(SetFalse(5));
         coffee.Play();
+        AudioManager.Play("Pouring");
     }
     IEnumerator SetFalse(float seconds)
     {
         yield return new WaitForSeconds(seconds); //wait 10 seconds
+        AudioManager.Play("Beep");
         pouring = false;
     }
 
