@@ -131,6 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cookingStation: Grill
   cookedMesh: {fileID: -7387706064836869012, guid: 6a4e1ac06cc80354888ba352a09f5ed3, type: 3}
+  burntMesh: {fileID: -7387706064836869012, guid: 0a5c016fa430a4c42a318c7f3aed08b1, type: 3}
 --- !u!114 &4028583722697370147
 MonoBehaviour:
   m_ObjectHideFlags: 0

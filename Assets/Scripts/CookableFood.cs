@@ -7,11 +7,14 @@ using UnityEngine;
 public class CookableFood : MonoBehaviour
 {
     private bool cooking;
-    private bool isCooked;
+    private bool isCooked = false;
+    private bool isBurnt = false;
     private float cookingTime = 0;
-    private float timeToCook = 5;
+    private float timeToCook = 2;
+    private float timeToBurn = 4;
     public string cookingStation;
     public Mesh cookedMesh;
+    public Mesh burntMesh;
 
     void OnCollisionEnter(Collision collisionInfo)
     {
@@ -31,15 +34,25 @@ public class CookableFood : MonoBehaviour
     }
     void Update()
     {
-        if (cooking && !isCooked)
+        if (cooking && !isBurnt)
         {
-            print("cooking ");
 
             cookingTime += Time.deltaTime;
             if (cookingTime >= timeToCook)
             {
-                isCooked = true;
-                cookItem();
+                if (cookingTime >= timeToBurn)
+                {
+                    print("burnt");
+                    isCooked = false;
+                    isBurnt = true;
+                    burnItem();
+                }
+                else if (cookingTime >= timeToCook && !isCooked)
+                {
+                    isCooked = true;
+                    cookItem();
+                }
+
             }
         }
     }
@@ -48,6 +61,14 @@ public class CookableFood : MonoBehaviour
     {
         MeshFilter currentMesh = this.gameObject.GetComponent<MeshFilter>();
         currentMesh.sharedMesh = cookedMesh;
+        this.tag = "Prepered";
+        AudioManager.Play("FoodDone");
+    }
+    void burnItem()
+    {
+        MeshFilter currentMesh = this.gameObject.GetComponent<MeshFilter>();
+        currentMesh.sharedMesh = burntMesh;
+        this.tag = "Untagged";
         AudioManager.Play("FoodDone");
     }
 }

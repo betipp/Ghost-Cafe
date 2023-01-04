@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 2942525209979070035}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.713, y: 1.2613666, z: 0.7128539}
-  m_LocalScale: {x: -0.053028498, y: -0.0037727503, z: -0.041799445}
+  m_LocalScale: {x: -0.053028498, y: -0.032446027, z: -0.041799445}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -115,8 +115,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 20.385902, z: 8.757504}
-  m_Center: {x: 3.553509e-16, y: -6.401432, z: 3.3787525}
+  m_Size: {x: 2, y: 1.5879344, z: 7.2769384}
+  m_Center: {x: 0, y: 0.47527006, z: 2.638469}
 --- !u!114 &2599873066525924110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cookingStation: Grill
   cookedMesh: {fileID: -810010915875384007, guid: fe7d1c92394e8a14f931433e947a3db1, type: 3}
+  burntMesh: {fileID: -810010915875384007, guid: a20cb627dc5174746964662739fa79c3, type: 3}
 --- !u!82 &-1187478768792053498
 AudioSource:
   m_ObjectHideFlags: 0

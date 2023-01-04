@@ -48,6 +48,7 @@ public class PourableDrink : MonoBehaviour
             if (cookingTime >= timeToCook)
             {
                 isCooked = true;
+                this.tag = "Prepered";
                 showLiquid();
             }
         }

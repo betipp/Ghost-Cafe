@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 1319114529449134351}
   - component: {fileID: 1319114529449134350}
   m_Layer: 0
-  m_Name: Cup
+  m_Name: CofeeCup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
