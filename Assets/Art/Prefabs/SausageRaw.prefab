@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 6494126799067980255}
   - component: {fileID: 9077905151483335957}
   - component: {fileID: 7654614146965403909}
-  - component: {fileID: 7654614146965403908}
   - component: {fileID: 7654614146965403910}
   - component: {fileID: 7654614146965403911}
   - component: {fileID: 3505460526495690824}
+  - component: {fileID: -975188018164622990}
   m_Layer: 0
   m_Name: SausageRaw
   m_TagString: Untagged
@@ -104,20 +104,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &7654614146965403908
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7420752217805026496}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.25957555
-  m_Height: 2.4637752
-  m_Direction: 1
-  m_Center: {x: 0.0002322197, y: -0.057774007, z: 0.0037956983}
 --- !u!114 &7654614146965403910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,3 +340,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &-975188018164622990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7420752217805026496}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5191511, y: 2.4637752, z: 0.51490486}
+  m_Center: {x: 0.0002322197, y: -0.057774007, z: 0.0037956983}
