@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Grill
+  - CoffeeMachine
+  - Knife
+  - Hand
+  - Prepered
+  - TaskDone
+  - ShakeMachine
   layers:
   - Default
   - TransparentFX
