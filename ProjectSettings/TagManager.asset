@@ -10,6 +10,7 @@ TagManager:
   - Hand
   - Prepered
   - TaskDone
+  - ShakeMachine
   layers:
   - Default
   - TransparentFX
