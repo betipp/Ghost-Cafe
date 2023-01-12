@@ -8,7 +8,12 @@ public class ClockOutMachine : MonoBehaviour
     {
         if (other.tag == "Hand")
         {
-            Application.Quit();
+            quitGame();
         }
+    }
+
+    public void quitGame()
+    {
+        Application.Quit();
     }
 }
