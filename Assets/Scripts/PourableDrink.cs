@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.XR.Interaction.Toolkit;
 
 
 public class PourableDrink : MonoBehaviour
@@ -21,6 +21,10 @@ public class PourableDrink : MonoBehaviour
     [SerializeField]
     private GameObject lid;
 
+
+
+
+
     void Start()
     {
         //drinkMachine = GameObject.Find(prepStation);
@@ -34,7 +38,8 @@ public class PourableDrink : MonoBehaviour
         {
             onPrepStation = true;
             drinkStream = collisionInfo.gameObject;
-            //this.gameObject.transform.position = collisionInfo.gameObject.transform.position;
+            this.gameObject.transform.position = drinkStream.GetComponent<DrinkStream>().stationCupPosition.gameObject.transform.position;
+            this.gameObject.transform.rotation = drinkStream.GetComponent<DrinkStream>().stationCupPosition.gameObject.transform.rotation;
         }
     }
     void OnTriggerExit(Collider collisionInfo)
