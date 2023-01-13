@@ -24826,6 +24826,7 @@ GameObject:
   - component: {fileID: 1473157330}
   - component: {fileID: 1473157329}
   - component: {fileID: 1473157334}
+  - component: {fileID: 1473157335}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Hand
@@ -25397,67 +25398,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &1488988971
-PrefabInstance:
+--- !u!114 &1473157335
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2725439070181673668, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 1967133654}
-    - target: {fileID: 6288122639265402227, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
-      propertyPath: m_RootOrder
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6288122639265402227, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.553
-      objectReference: {fileID: 0}
-    - target: {fileID: 6288122639265402227, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.874
-      objectReference: {fileID: 0}
-    - target: {fileID: 6288122639265402227, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.144
-      objectReference: {fileID: 0}
-    - target: {fileID: 6288122639265402227, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -3.7493994e-33
-      objectReference: {fileID: 0}
-    - target: {fileID: 6288122639265402227, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -6.123234e-17
-      objectReference: {fileID: 0}
-    - target: {fileID: 6288122639265402227, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6288122639265402227, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 6.123234e-17
-      objectReference: {fileID: 0}
-    - target: {fileID: 6288122639265402227, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6288122639265402227, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6288122639265402227, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6631610468692776905, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
-      propertyPath: m_Name
-      value: Pudding (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 364513ad5a453ce4abf25afb17d03f9d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473157327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab51a801da37eb4696dc16e5487b285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handPrefab: {fileID: 7072478885645355679, guid: 46e8847d92a51f34fb261c3c8280333b, type: 3}
+  hideHandOnSelect: 1
+  inputDeviceCharacteristics: 320
 --- !u!1 &1489851354
 GameObject:
   m_ObjectHideFlags: 0
@@ -25867,6 +25822,7 @@ GameObject:
   - component: {fileID: 1511836825}
   - component: {fileID: 1511836824}
   - component: {fileID: 1511836829}
+  - component: {fileID: 1511836830}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Hand
@@ -26438,6 +26394,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1511836830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511836822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab51a801da37eb4696dc16e5487b285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handPrefab: {fileID: 3240524871627034548, guid: 0c3962d09c340f747af2bf4d35e30c19, type: 3}
+  hideHandOnSelect: 1
+  inputDeviceCharacteristics: 576
 --- !u!1 &1515845671
 GameObject:
   m_ObjectHideFlags: 0
