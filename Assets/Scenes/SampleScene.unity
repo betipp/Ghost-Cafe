@@ -24255,6 +24255,7 @@ GameObject:
   - component: {fileID: 1473157330}
   - component: {fileID: 1473157329}
   - component: {fileID: 1473157334}
+  - component: {fileID: 1473157335}
   m_Layer: 0
   m_Name: LeftHand Controller
   m_TagString: Hand
@@ -24826,6 +24827,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1473157335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473157327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab51a801da37eb4696dc16e5487b285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handPrefab: {fileID: 7072478885645355679, guid: 46e8847d92a51f34fb261c3c8280333b, type: 3}
+  hideHandOnSelect: 1
+  inputDeviceCharacteristics: 320
 --- !u!1 &1478578390
 GameObject:
   m_ObjectHideFlags: 0
@@ -25432,6 +25448,7 @@ GameObject:
   - component: {fileID: 1511836825}
   - component: {fileID: 1511836824}
   - component: {fileID: 1511836829}
+  - component: {fileID: 1511836830}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: Hand
@@ -26003,6 +26020,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.1, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1511836830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511836822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab51a801da37eb4696dc16e5487b285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handPrefab: {fileID: 3240524871627034548, guid: 0c3962d09c340f747af2bf4d35e30c19, type: 3}
+  hideHandOnSelect: 1
+  inputDeviceCharacteristics: 576
 --- !u!1 &1515845671
 GameObject:
   m_ObjectHideFlags: 0
