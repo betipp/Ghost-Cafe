@@ -45,6 +45,14 @@ The spawn monitor serves to spawn items and food in the game so it can be cooked
 
 ## Installation guide
 
+### PCVR (Oculus Rift S and similar)
+Download the **PCVR.zip** from the [releases page](https://github.com/betipp/Ghost-Cafe/releases/latest) and run the executable file.
+
+### Android (Oculus Quest)
+Download the **OculusQuest.apk** from the [releases page](https://github.com/betipp/Ghost-Cafe/releases/latest) and install it on your device.
+Please consult [Oculus documentation](https://developer.oculus.com/documentation/unity/ts-odh-deploy-build/) for additional info.
+NOTE: [Developer mode](https://developer.oculus.com/documentation/native/android/mobile-device-setup/) must be enabled on the device for this to work.
+
 ## Read before contributing
 
 - [Unity — Project Structure Best Practices!](https://sam-16930.medium.com/unity-project-structure-a694792cefed)
