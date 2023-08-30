@@ -1,6 +1,6 @@
 # Ghost Cafe ☕👻
 
-A VR game where you play as a server in a small cafe. You costumer is a very hungry ghost, serve him food and sweets.
+A VR game where you play as a server in a small cafe. Your customer is a very hungry ghost, serve him food and sweets.
 The game is made with Unity and Blender.
 
 ---
@@ -17,7 +17,7 @@ The game is made with Unity and Blender.
 
 ## Gameplay 🎮
 
-The goal of the game is to cook and prepare food according to the customers order.
+The goal of the game is to cook and prepare food according to the customer's order.
 
 ### Coffee machine ☕
 
@@ -26,20 +26,20 @@ After some seconds the mug will be full.
 
 ### Shake machine 🥤
 
-The shake machine can be used to make chocolate or strawberry shakes. Once a shake cup is placed on the machine, a shake will be made. Depending on witch side of the machine you put the shake, it will either give you a chocolate shake or a strawberry shake.
+The shake machine can be used to make chocolate or strawberry shakes. Once a shake cup is placed on the machine, a shake will be made. Depending on which side of the machine you put the shake, it will either give you a chocolate shake or a strawberry shake.
 
-### Gril 🥓🍳
+### Grill 🥓🍳
 
 The grill is used for food prep, on it you can make: - Bacon - Eggs - Sausages
 Be careful not to leave your food on the grill for too long, or it will burn.
 
-### Sweets cabnit 🍰
+### Sweets cabinet 🍰
 
-The sweets cabinet contains different cakes and sweets, that the costumer might like.
+The sweets cabinet contains different cakes and sweets, that the customer might like.
 
 ### Spawn monitor 🖥️
 
-The spawn monitor serves to spawn items and food in the game so it can be cooked and sold to the costumer. Or you could just make a mess.
+The spawn monitor serves to spawn items and food in the game so it can be cooked and sold to the customer. Or you could just make a mess.
 
 ---
 
