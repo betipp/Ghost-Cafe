@@ -4,6 +4,27 @@ A VR game where you play as a server in a small cafe. Your customer is a very hu
 The game is made with Unity and Blender.
 
 ---
+## UPDATE 👋
+
+A new update coming to Ghost Cafe!
+
+### NEW FEATURES ✨
+- Juice machine 🧃
+- Oranges 🍊
+- Bug fixes 🐛
+
+
+### COMING SOON 🗃️
+
+- Cafe overhaul 🏡
+- Gameplay loop 🕹️
+- Restocking feature 💸
+- FRI branding 🎓
+- Fridge 🥓
+- Sandwiches 🥪
+- Coffee mixing ☕
+
+
 
 ## How to play 🕹️
 
