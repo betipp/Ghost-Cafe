@@ -11,6 +11,8 @@ TagManager:
   - Prepered
   - TaskDone
   - ShakeMachine
+  - Fruit
+  - JuiceMachine
   layers:
   - Default
   - TransparentFX
