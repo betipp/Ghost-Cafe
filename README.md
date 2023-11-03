@@ -12,6 +12,7 @@ A new update coming to Ghost Cafe!
 - Juice machine 🧃
 - Oranges 🍊
 - Bug fixes 🐛
+- No more peeking through walls 🙈
 
 
 ### COMING SOON 🗃️
