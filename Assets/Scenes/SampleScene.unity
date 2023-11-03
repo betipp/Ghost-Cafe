@@ -292,6 +292,10 @@ PrefabInstance:
       value: Stove
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f06b99e29edc3894f975ea9db99e430f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f06b99e29edc3894f975ea9db99e430f, type: 3}
       propertyPath: m_TagString
       value: Grill
       objectReference: {fileID: 0}
@@ -536,6 +540,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_Name
       value: Cabnit (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1170,6 +1178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabnit (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
 --- !u!1 &200481031
@@ -1373,6 +1385,10 @@ PrefabInstance:
       value: Cabnit (9)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -1432,6 +1448,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_Name
       value: Cabnit (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
@@ -1594,6 +1614,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 43a8b6025c300094a95922860d7dbe09, type: 3}
       propertyPath: m_Name
       value: BigMonitor
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 43a8b6025c300094a95922860d7dbe09, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43a8b6025c300094a95922860d7dbe09, type: 3}
@@ -2437,6 +2461,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_Name
       value: Cabnit (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -7453,6 +7481,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_Name
       value: Cabnit (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
@@ -12748,6 +12780,10 @@ PrefabInstance:
       value: CoffeeMachine
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 46fcf7921ab5d01419bca78368fead18, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 46fcf7921ab5d01419bca78368fead18, type: 3}
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
@@ -12876,7 +12912,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556123425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.755, y: 1.131, z: 3.96}
+  m_LocalPosition: {x: -2.196, y: 1.131, z: -2.465}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13594,6 +13630,10 @@ PrefabInstance:
       value: Cabnit (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -14168,6 +14208,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c46988214eb230e43aedb5d007d6d5be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4562266686271685020, guid: c46988214eb230e43aedb5d007d6d5be, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c46988214eb230e43aedb5d007d6d5be, type: 3}
       propertyPath: m_Name
@@ -16309,7 +16353,7 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 64
-  fadeSpeed: 1
+  fadeSpeed: 2
   sphereCheckSize: 0.15
 --- !u!23 &819139799
 MeshRenderer:
@@ -24274,6 +24318,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabnit (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
 --- !u!1 &1233394071
@@ -24654,6 +24702,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_Name
       value: Cabnit (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25414,6 +25466,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Counter 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9d91394183cc2524287034588acae734, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d91394183cc2524287034588acae734, type: 3}
 --- !u!4 &1374925341 stripped
@@ -25513,6 +25569,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_Name
       value: Cabnit (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25688,6 +25748,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_Name
       value: Cabnit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -27875,8 +27939,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561885624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.15, y: 12.777, z: -15.37}
-  m_LocalScale: {x: 0.07732, y: 5.0532, z: 10.811073}
+  m_LocalPosition: {x: -3.831, y: 12.777, z: -15.37}
+  m_LocalScale: {x: 1.4894693, y: 5.0532, z: 10.811073}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 891956453}
@@ -32900,6 +32964,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabnit (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
 --- !u!1 &1637176929
@@ -33356,6 +33424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabnit (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
 --- !u!1 &1680706549
@@ -33694,6 +33766,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_Name
       value: Cabnit (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -39179,6 +39255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabnit (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
 --- !u!1001 &1744905922
@@ -39239,6 +39319,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_Name
       value: Cabnit (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: abb4740bf8bc2cf468e8a4e8e4fe48cb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -39312,6 +39396,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e02375f019fbbb945a401c83aa6b5037, type: 3}
       propertyPath: m_Name
       value: Blender
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e02375f019fbbb945a401c83aa6b5037, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e02375f019fbbb945a401c83aa6b5037, type: 3}
@@ -44712,6 +44800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SweetsCabnit
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f47eabce5498ed64bbb92c03c1e5975b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f47eabce5498ed64bbb92c03c1e5975b, type: 3}
 --- !u!1 &1872835800 stripped
@@ -44863,6 +44955,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 267dbb2e4c5086d43b483ade2ac7c015, type: 3}
       propertyPath: m_Name
       value: ClockOutMachine
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 267dbb2e4c5086d43b483ade2ac7c015, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 267dbb2e4c5086d43b483ade2ac7c015, type: 3}
@@ -47584,7 +47680,7 @@ GameObject:
   - component: {fileID: 3469287836544911186}
   - component: {fileID: 1711813856038695832}
   - component: {fileID: 3469287836544911187}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Monitor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49002,6 +49098,10 @@ PrefabInstance:
     - target: {fileID: 8579162352939137985, guid: 8e56c3b0b3abf1a4480546a57ac8aed4, type: 3}
       propertyPath: m_Name
       value: Cabnit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8579162352939137985, guid: 8e56c3b0b3abf1a4480546a57ac8aed4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8579162352939137985, guid: 8e56c3b0b3abf1a4480546a57ac8aed4, type: 3}
       propertyPath: m_StaticEditorFlags
