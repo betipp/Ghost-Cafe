@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using TMPro;
 
 public class OrangeMachine : MonoBehaviour
 {
@@ -25,7 +26,8 @@ public class OrangeMachine : MonoBehaviour
     [SerializeField]
     private GameObject drinkMachine;
 
-
+    [SerializeField]
+    private GameObject fruitText;
 
     void OnTriggerEnter(Collider other)
     {
@@ -36,6 +38,7 @@ public class OrangeMachine : MonoBehaviour
                 if (!isAlreadyInside(other.gameObject))
                 {
                     fruit.Add(other.gameObject);
+                    fruitText.GetComponent<TMPro.TextMeshProUGUI>().text = fruit.Count + "/3";
 
                 }
                 if (fruit.Count == 3)
