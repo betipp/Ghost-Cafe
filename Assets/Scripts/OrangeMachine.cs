@@ -33,20 +33,20 @@ public class OrangeMachine : MonoBehaviour
     {
         if (operation == Operation.Blender)
         {
-            if (other.tag == "Fruit" && !isFull)
+            if (other.tag == "Fruit")
             {
                 if (!isAlreadyInside(other.gameObject))
                 {
                     fruit.Add(other.gameObject);
-                    fruitText.GetComponent<TMPro.TextMeshProUGUI>().text = fruit.Count + "/3";
 
                 }
-                if (fruit.Count == 3)
+                if (fruit.Count >= 3)
                 {
                     isFull = true;
                 }
 
             }
+            fruitText.GetComponent<TMPro.TextMeshProUGUI>().text = fruit.Count + "/3";
         }
         else if (operation == Operation.Button)
         {
@@ -87,13 +87,29 @@ public class OrangeMachine : MonoBehaviour
 
     void mixFruit()
     {
+        Destroy(fruit[0]);
+        Destroy(fruit[1]);
+        Destroy(fruit[2]);
+        fruit.RemoveRange(0, Math.Min(3, fruit.Count));
+        print(fruit);
+        if (fruit.Count >= 3)
+        {
+            isFull = true;
+        }
+        else
+        {
+            isFull = false;
+        }
+        fruitText.GetComponent<TMPro.TextMeshProUGUI>().text = fruit.Count + "/3";
+
+        /*
         foreach (GameObject eachChild in fruit)
         {
             print("Destrying " + eachChild.name);
             Destroy(eachChild);
         }
-        fruit = new List<GameObject>();
-        isFull = false;
+        //fruit = new List<GameObject>();
+        isFull = false;*/
     }
 
     IEnumerator SetFalse(float seconds)
