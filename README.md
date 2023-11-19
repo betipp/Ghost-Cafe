@@ -13,6 +13,7 @@ A new update coming to Ghost Cafe!
 - Oranges 🍊
 - Bug fixes 🐛
 - No more peeking through walls 🙈
+- FRI branding 🎓
 
 
 ### COMING SOON 🗃️
@@ -20,7 +21,6 @@ A new update coming to Ghost Cafe!
 - Cafe overhaul 🏡
 - Gameplay loop 🕹️
 - Restocking feature 💸
-- FRI branding 🎓
 - Fridge 🥓
 - Sandwiches 🥪
 - Coffee mixing ☕
