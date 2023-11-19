@@ -14,13 +14,12 @@ A new update coming to Ghost Cafe!
 - Bug fixes 🐛
 - No more peeking through walls 🙈
 - FRI branding 🎓
-
+- Restocking feature 💸
 
 ### COMING SOON 🗃️
 
 - Cafe overhaul 🏡
 - Gameplay loop 🕹️
-- Restocking feature 💸
 - Fridge 🥓
 - Sandwiches 🥪
 - Coffee mixing ☕
