@@ -15,6 +15,7 @@ A new update coming to Ghost Cafe!
 - No more peeking through walls 🙈
 - FRI branding 🎓
 - Restocking feature 💸
+- Trashcan 🗑️
 
 ### COMING SOON 🗃️
 
