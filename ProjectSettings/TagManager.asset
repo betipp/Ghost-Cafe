@@ -13,6 +13,8 @@ TagManager:
   - ShakeMachine
   - Fruit
   - JuiceMachine
+  - Item
+  - Machine
   layers:
   - Default
   - TransparentFX
