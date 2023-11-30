@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class TrashCan : MonoBehaviour
 {
+    [SerializeField]
+    private ParticleSystem trashParticles;
 
     List<String> removableItems = new List<String>()
         {
@@ -21,6 +23,7 @@ public class TrashCan : MonoBehaviour
         {
             Destroy(other.gameObject);
             AudioManager.Play("Trash");
+            trashParticles.Play();
         }
     }
 }
