@@ -10,7 +10,7 @@ public class PourableDrink : MonoBehaviour
     private bool isFilled;
     private float fillTime = 0;
     private float timeToCook = 5;
-    public string prepStation;
+    public List<string> prepStation = new List<string>();
 
     GameObject drinkMachine;
 
@@ -34,8 +34,10 @@ public class PourableDrink : MonoBehaviour
 
     void OnTriggerEnter(Collider collisionInfo)
     {
-        if (collisionInfo.gameObject.tag == prepStation)
+        print("IS ON PREP STATION" + collisionInfo.gameObject.tag);
+        if (prepStation.Contains(collisionInfo.gameObject.tag))
         {
+            print("IS ON PREP STATION");
             onPrepStation = true;
             drinkStream = collisionInfo.gameObject;
             this.gameObject.transform.position = drinkStream.GetComponent<DrinkStream>().stationCupPosition.gameObject.transform.position;
@@ -44,7 +46,7 @@ public class PourableDrink : MonoBehaviour
     }
     void OnTriggerExit(Collider collisionInfo)
     {
-        if (collisionInfo.gameObject.tag == prepStation)
+        if (prepStation.Contains(collisionInfo.gameObject.tag))
         {
             onPrepStation = false;
             drinkStream = null;
