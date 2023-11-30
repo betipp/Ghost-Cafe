@@ -1789,6 +1789,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: -1187478768792053498, guid: 69f46d72ce6eed245800bdc17f98f951, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2566528119450074345, guid: 69f46d72ce6eed245800bdc17f98f951, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -17732,6 +17736,10 @@ PrefabInstance:
     - target: {fileID: -1187478768792053498, guid: 69f46d72ce6eed245800bdc17f98f951, type: 3}
       propertyPath: m_Volume
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -1187478768792053498, guid: 69f46d72ce6eed245800bdc17f98f951, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2566528119450074345, guid: 69f46d72ce6eed245800bdc17f98f951, type: 3}
       propertyPath: m_RootOrder
@@ -49435,6 +49443,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 3374319211743768147, guid: 40e1d87566422e54fad0a37b84390ef6, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3486594185353579969, guid: 40e1d87566422e54fad0a37b84390ef6, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -50166,6 +50178,10 @@ PrefabInstance:
     - target: {fileID: 3505460526495690824, guid: 729405281f4447d40a968fa4083ebc8f, type: 3}
       propertyPath: m_Volume
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3505460526495690824, guid: 729405281f4447d40a968fa4083ebc8f, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7420752217805026496, guid: 729405281f4447d40a968fa4083ebc8f, type: 3}
       propertyPath: m_Name

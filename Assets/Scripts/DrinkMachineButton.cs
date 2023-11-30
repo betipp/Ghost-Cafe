@@ -16,8 +16,6 @@ public class DrinkMachineButton : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        print(other.name);
-
         if (other.tag == "Hand")
         {
             liquidStream.GetComponent<DrinkStream>().setIsPouring(true);
