@@ -53792,6 +53792,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CupCoffee
       objectReference: {fileID: 0}
+    - target: {fileID: 8478132942835457392, guid: d6d7bcc06375592459668a32c327f7aa, type: 3}
+      propertyPath: prepStation.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478132942835457392, guid: d6d7bcc06375592459668a32c327f7aa, type: 3}
+      propertyPath: prepStation.Array.data[0]
+      value: CoffeeMachine
+      objectReference: {fileID: 0}
     - target: {fileID: 8478132942835457422, guid: d6d7bcc06375592459668a32c327f7aa, type: 3}
       propertyPath: m_InteractionManager
       value: 
