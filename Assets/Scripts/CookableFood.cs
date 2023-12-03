@@ -42,7 +42,6 @@ public class CookableFood : MonoBehaviour
             {
                 if (cookingTime >= timeToBurn)
                 {
-                    print("burnt");
                     isCooked = false;
                     isBurnt = true;
                     burnItem();

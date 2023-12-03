@@ -91,7 +91,6 @@ public class OrangeMachine : MonoBehaviour
         Destroy(fruit[1]);
         Destroy(fruit[2]);
         fruit.RemoveRange(0, Math.Min(3, fruit.Count));
-        print(fruit);
         if (fruit.Count >= 3)
         {
             isFull = true;
