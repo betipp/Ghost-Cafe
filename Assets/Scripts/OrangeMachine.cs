@@ -71,6 +71,8 @@ public class OrangeMachine : MonoBehaviour
     {
         fruit.Remove(other.gameObject);
         isFull = false;
+        fruitText.GetComponent<TMPro.TextMeshProUGUI>().text = fruit.Count + "/3";
+
     }
 
     bool isAlreadyInside(GameObject item)
