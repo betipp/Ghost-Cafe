@@ -24865,6 +24865,7 @@ MonoBehaviour:
   liquidParticles: {fileID: 1566722305}
   drinkMachine: {fileID: 1511263326}
   fruitText: {fileID: 1033326176}
+  drinkStream: {fileID: 286411470}
 --- !u!54 &1219717919
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27531,6 +27532,7 @@ MonoBehaviour:
   liquidParticles: {fileID: 0}
   drinkMachine: {fileID: 0}
   fruitText: {fileID: 1033326176}
+  drinkStream: {fileID: 286411470}
 --- !u!1 &1511836822
 GameObject:
   m_ObjectHideFlags: 0

@@ -29,6 +29,16 @@ public class OrangeMachine : MonoBehaviour
     [SerializeField]
     private GameObject fruitText;
 
+    [SerializeField]
+    private GameObject drinkStream;
+
+
+
+    void Update()
+    {
+        fruitText.GetComponent<TMPro.TextMeshProUGUI>().text = fruit.Count + "/3";
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (operation == Operation.Blender)
@@ -52,9 +62,9 @@ public class OrangeMachine : MonoBehaviour
         {
             if (drinkMachine.GetComponent<OrangeMachine>().isFull)
             {
-
-                if (other.tag == "Hand")
+                if (other.tag == "Hand" && !drinkStream.GetComponent<DrinkStream>().isPouring)
                 {
+                    drinkStream.GetComponent<DrinkStream>().isPouring = true;
                     liquidStream.GetComponent<DrinkStream>().setIsPouring(true);
                     drinkMachine.GetComponent<OrangeMachine>().mixFruit();
                     StartCoroutine(SetFalse(5));
