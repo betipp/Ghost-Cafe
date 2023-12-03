@@ -18,8 +18,6 @@ public class SpawnObjectManager : MonoBehaviour
             IEnumerator coroutine = checkDistance();
             StartCoroutine(coroutine);
             unTouched = false;
-            print(other.tag + "  " + isRespawnableObject + "   " + unTouched);
-
 
         }
 
@@ -31,7 +29,6 @@ public class SpawnObjectManager : MonoBehaviour
         float dist = Vector3.Distance(this.gameObject.transform.position, spawnLocation.transform.position);
         while (dist < 1)
         {
-            print(dist);
             dist = Vector3.Distance(this.gameObject.transform.position, spawnLocation.transform.position);
             yield return null;
         }

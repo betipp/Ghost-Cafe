@@ -34,10 +34,8 @@ public class PourableDrink : MonoBehaviour
 
     void OnTriggerEnter(Collider collisionInfo)
     {
-        print("IS ON PREP STATION" + collisionInfo.gameObject.tag);
         if (prepStation.Contains(collisionInfo.gameObject.tag))
         {
-            print("IS ON PREP STATION");
             onPrepStation = true;
             drinkStream = collisionInfo.gameObject;
             this.gameObject.transform.position = drinkStream.GetComponent<DrinkStream>().stationCupPosition.gameObject.transform.position;
