@@ -39513,7 +39513,7 @@ MonoBehaviour:
   - Oreo
   - Pudding
   - Cookie
-  - FRICookie
+  - FRIPastry
   - JuiceShake
   ListStatus: 000000
   textList: {fileID: 2013184344}
@@ -54032,7 +54032,7 @@ PrefabInstance:
       objectReference: {fileID: 1967133654}
     - target: {fileID: 3624359901935297433, guid: 09eeda1f4a4914c4aa0555d41ce330c4, type: 3}
       propertyPath: m_Name
-      value: FRICookie
+      value: FRIPastry
       objectReference: {fileID: 0}
     - target: {fileID: 3624359901935297433, guid: 09eeda1f4a4914c4aa0555d41ce330c4, type: 3}
       propertyPath: m_TagString
