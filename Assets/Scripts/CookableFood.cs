@@ -68,7 +68,7 @@ public class CookableFood : MonoBehaviour
     {
         MeshFilter currentMesh = this.gameObject.GetComponent<MeshFilter>();
         currentMesh.sharedMesh = burntMesh;
-        this.tag = "Untagged";
+        this.tag = "Item";
         AudioManager.Play("FoodDone");
     }
 }
