@@ -6,6 +6,8 @@ public class DeskBell : MonoBehaviour
 {
     [SerializeField]
     private GameObject gameManager;
+
+    public ParticleSystem coins;
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Hand")
@@ -15,7 +17,8 @@ public class DeskBell : MonoBehaviour
             {
                 gameManager.GetComponent<ListManager>().removeOrderItems();
                 gameManager.GetComponent<ListManager>().fillListWithTasks();
-                AudioManager.Play("Boop");
+                AudioManager.Play("Coins");
+                coins.Play();
             }
         }
     }
