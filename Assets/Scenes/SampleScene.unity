@@ -57101,6 +57101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20383a0ce4f55c84993e5ef7469d51ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 1697508705}
   moldyMat: {fileID: 2100000, guid: 45babd29cefe64a40906d557c1cc0cf9, type: 2}
 --- !u!65 &2036857300
 BoxCollider:

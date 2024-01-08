@@ -7,6 +7,9 @@ public class FloorDetection : MonoBehaviour
 {
 
     [SerializeField]
+    private GameObject gameManager;
+
+    [SerializeField]
     private Material moldyMat;
 
     List<String> moldyItems = new List<String>()
@@ -33,6 +36,7 @@ public class FloorDetection : MonoBehaviour
 
             }
             other.tag = "Moldy";
+            gameManager.GetComponent<CoinManager>().decreaseCoins(5);
         }
 
     }

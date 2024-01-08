@@ -16,4 +16,11 @@ public class CoinManager : MonoBehaviour
         //Update UI
         coinsUIText.text = coinsValue.ToString();
     }
+
+    public void decreaseCoins(int value)
+    {
+        coinsValue = coinsValue - value;
+        //Update UI
+        coinsUIText.text = coinsValue.ToString();
+    }
 }
