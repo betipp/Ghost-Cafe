@@ -24257,6 +24257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trashParticles: {fileID: 1876002907}
+  gameManager: {fileID: 1697508705}
 --- !u!65 &1123805160
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44557,6 +44558,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 066d8380125b32a48a47f23ace63408e, type: 3}
     volume: 0.5
     pitch: 1.48
+    loop: 0
+    source: {fileID: 0}
+  - name: Down
+    clip: {fileID: 8300000, guid: 4eb67d359a5d422489eb3e97cbaed1d7, type: 3}
+    volume: 1
+    pitch: 0.8
     loop: 0
     source: {fileID: 0}
 --- !u!4 &1697508707

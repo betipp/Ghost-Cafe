@@ -28,6 +28,7 @@ public class TrashCan : MonoBehaviour
             if (other.tag == "Moldy")
             {
                 gameManager.GetComponent<CoinManager>().increaseCoins(5);
+                AudioManager.Play("Coins");
             }
             Destroy(other.gameObject);
             AudioManager.Play("Trash");

@@ -37,6 +37,7 @@ public class FloorDetection : MonoBehaviour
             }
             other.tag = "Moldy";
             gameManager.GetComponent<CoinManager>().decreaseCoins(5);
+            AudioManager.Play("Down");
         }
 
     }
