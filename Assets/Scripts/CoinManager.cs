@@ -12,7 +12,7 @@ public class CoinManager : MonoBehaviour
 
     public void increaseCoins(int value)
     {
-        coinsValue = coinsValue + 50;
+        coinsValue = coinsValue + value;
         //Update UI
         coinsUIText.text = coinsValue.ToString();
     }
