@@ -15,6 +15,7 @@ TagManager:
   - JuiceMachine
   - Item
   - Machine
+  - Moldy
   layers:
   - Default
   - TransparentFX

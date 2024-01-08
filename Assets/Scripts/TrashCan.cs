@@ -15,6 +15,7 @@ public class TrashCan : MonoBehaviour
             "Fruit",
             "Knife",
             "Item",
+            "Moldy",
     };
 
     void OnTriggerEnter(Collider other)
