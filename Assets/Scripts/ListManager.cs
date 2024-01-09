@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ListManager : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class ListManager : MonoBehaviour
     public ParticleSystem stars;
 
     private GameObject[] orderItems = { null, null, null };
+
+    [SerializeField]
+    private GameObject[] orderItemsLocation = { null, null, null };
 
 
 
@@ -33,6 +37,11 @@ public class ListManager : MonoBehaviour
                 stars.Play();
                 printTasks();
                 orderItems[i] = other.gameObject;
+                //Set order to its intended location on the order plate
+                other.gameObject.GetComponent<XRGrabInteractable>().enabled = false;
+                other.gameObject.transform.position = orderItemsLocation[i].transform.position;
+                other.gameObject.transform.rotation = orderItemsLocation[i].transform.rotation;
+                other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
                 other.tag = "TaskDone";
 
             }
