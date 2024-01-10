@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +22,16 @@ public class Ghost : MonoBehaviour
     [SerializeField]
     public GameObject[] Ghosts = { GameObject.Find("GhostProfesor"), GameObject.Find("GhostStudent") };
 
+    private String[] teacherNames = {
+        "Janez Demšar",
+        "Ajda Lampe",
+        "Bojan Klemenc",
+        "Gašper Fijavž",
+        "Jelena Klisara",
+    };
+
+    [SerializeField]
+    private GameObject teacherName = GameObject.Find("TeacherNameTag");
 
     public Ghost(GhostType ghostType)
     {
@@ -37,6 +48,9 @@ public class Ghost : MonoBehaviour
 
             Ghosts[0].gameObject.SetActive(true);
             Ghosts[1].gameObject.SetActive(false);
+
+            String randomTeacherName = teacherNames[UnityEngine.Random.Range(0, teacherNames.Length)];
+            teacherName.GetComponent<TMPro.TextMeshProUGUI>().text = randomTeacherName.Split(" ")[0] + "<br>" + randomTeacherName.Split(" ")[1];
 
         }
         else
