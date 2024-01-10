@@ -52,10 +52,6 @@ public class ListManager : MonoBehaviour
 
 
 
-    void Start()
-    {
-        fillListWithTasks();
-    }
 
     public void fillListWithTasks()
     {
