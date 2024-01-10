@@ -40,6 +40,7 @@ public class PourableDrink : MonoBehaviour
             drinkStream = collisionInfo.gameObject;
             this.gameObject.transform.position = drinkStream.GetComponent<DrinkStream>().stationCupPosition.gameObject.transform.position;
             this.gameObject.transform.rotation = drinkStream.GetComponent<DrinkStream>().stationCupPosition.gameObject.transform.rotation;
+            this.GetComponent<SpawnObjectManager>().spawnNewObject();
         }
     }
     void OnTriggerExit(Collider collisionInfo)

@@ -17,8 +17,22 @@ public class SpawnObjectManager : MonoBehaviour
 
             IEnumerator coroutine = checkDistance();
             StartCoroutine(coroutine);
-            unTouched = false;
+            //unTouched = false;
 
+        }
+
+    }
+
+    public void spawnNewObject()
+    {
+        if (isRespawnableObject && unTouched)
+        {
+            GameObject newObject = Instantiate(this.gameObject, spawnLocation.transform.position, Quaternion.identity);
+            newObject.GetComponent<Rigidbody>().isKinematic = false;
+            newObject.GetComponent<Rigidbody>().useGravity = true;
+            newObject.GetComponent<SpawnObjectManager>().unTouched = true;
+            newObject.GetComponent<AudioSource>().Play();
+            unTouched = false;
         }
 
     }
@@ -32,12 +46,15 @@ public class SpawnObjectManager : MonoBehaviour
             dist = Vector3.Distance(this.gameObject.transform.position, spawnLocation.transform.position);
             yield return null;
         }
-        GameObject newObject = Instantiate(this.gameObject, spawnLocation.transform.position, Quaternion.identity);
-        newObject.GetComponent<Rigidbody>().isKinematic = false;
-        newObject.GetComponent<Rigidbody>().useGravity = true;
-        newObject.GetComponent<SpawnObjectManager>().unTouched = true;
-        newObject.GetComponent<AudioSource>().Play();
-        unTouched = false;
+        if (unTouched)
+        {
+            GameObject newObject = Instantiate(this.gameObject, spawnLocation.transform.position, Quaternion.identity);
+            newObject.GetComponent<Rigidbody>().isKinematic = false;
+            newObject.GetComponent<Rigidbody>().useGravity = true;
+            newObject.GetComponent<SpawnObjectManager>().unTouched = true;
+            newObject.GetComponent<AudioSource>().Play();
+            unTouched = false;
+        }
         yield return null;
     }
 
