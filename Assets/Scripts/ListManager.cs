@@ -22,6 +22,8 @@ public class ListManager : MonoBehaviour
     [SerializeField]
     private GameObject[] orderItemsLocation = { null, null, null };
 
+    bool translation = false;
+
 
 
     void OnTriggerEnter(Collider other)
@@ -77,14 +79,93 @@ public class ListManager : MonoBehaviour
         {
             if (ListStatus[i] == true)
             {
-                strTasks = strTasks + " - <s>" + List[i] + "</s>" + System.Environment.NewLine;
+                strTasks = strTasks + " - <s>" + getTaskName(List[i]) + "</s>" + System.Environment.NewLine;
             }
             else
             {
-                strTasks = strTasks + " - " + List[i] + System.Environment.NewLine;
+                strTasks = strTasks + " - " + getTaskName(List[i]) + System.Environment.NewLine;
             }
         }
         textList.text = strTasks;
+    }
+
+    string getTaskName(String taskName)
+    {
+        if (translation)
+        {
+            switch (taskName)
+            {
+                case "Dounut":
+                    return ("Krof");
+                case "Coffee":
+                    return ("Kava");
+                case "Bacon":
+                    return ("Slanina");
+                case "ToastJelly":
+                    return ("Toast z marmelado");
+                case "ToastPeanut":
+                    return ("Toast z arašidi");
+                case "Egg":
+                    return ("Jajca");
+                case "Sausage":
+                    return ("Hrenovka");
+                case "ChocolateShake":
+                    return ("Čokoladni shake");
+                case "StrawberryShake":
+                    return ("Jagodni shake");
+                case "Pie":
+                    return ("Pita");
+                case "Oreo":
+                    return ("Oreo");
+                case "Pudding":
+                    return ("Puding");
+                case "Cookie":
+                    return ("Piškot");
+                case "FRIPastry":
+                    return ("FRI piškot");
+                case "JuiceShake":
+                    return ("Sadni shake");
+            }
+            return null;
+        }
+        else
+        {
+            switch (taskName)
+            {
+                case "Dounut":
+                    return ("Donut");
+                case "Coffee":
+                    return ("Coffee");
+                case "Bacon":
+                    return ("Bacon");
+                case "ToastJelly":
+                    return ("Jelly toast");
+                case "ToastPeanut":
+                    return ("Peanut toast");
+                case "Egg":
+                    return ("Egg");
+                case "Sausage":
+                    return ("Sausage");
+                case "ChocolateShake":
+                    return ("Chocolate shake");
+                case "StrawberryShake":
+                    return ("Strawberry shake");
+                case "Pie":
+                    return ("Pie");
+                case "Oreo":
+                    return ("Oreo");
+                case "Pudding":
+                    return ("Pudding");
+                case "Cookie":
+                    return ("Cookie");
+                case "FRIPastry":
+                    return ("FRI cookie");
+                case "JuiceShake":
+                    return ("Juice shake");
+            }
+            return null;
+        }
+
     }
 
     string getRandomTask()
