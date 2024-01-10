@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Toast : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.tag == "Knife")
         {
