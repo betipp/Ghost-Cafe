@@ -69363,6 +69363,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1967133654}
+    - target: {fileID: 7992771121994018371, guid: 982fb87e0b8afe347a3e25505e9eda9d, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6634239831451201840, guid: 982fb87e0b8afe347a3e25505e9eda9d, type: 3}
     - {fileID: 6634239831451201843, guid: 982fb87e0b8afe347a3e25505e9eda9d, type: 3}
