@@ -22,7 +22,9 @@ public class ListManager : MonoBehaviour
     [SerializeField]
     private GameObject[] orderItemsLocation = { null, null, null };
 
-    bool translation = false;
+
+
+
 
 
 
@@ -91,7 +93,7 @@ public class ListManager : MonoBehaviour
 
     string getTaskName(String taskName)
     {
-        if (translation)
+        if (LanguageManager.translation)
         {
             switch (taskName)
             {
@@ -124,7 +126,7 @@ public class ListManager : MonoBehaviour
                 case "FRIPastry":
                     return ("FRI piškot");
                 case "JuiceShake":
-                    return ("Sadni shake");
+                    return ("Smuti");
             }
             return null;
         }
@@ -161,7 +163,7 @@ public class ListManager : MonoBehaviour
                 case "FRIPastry":
                     return ("FRI cookie");
                 case "JuiceShake":
-                    return ("Juice shake");
+                    return ("Smoothie");
             }
             return null;
         }
