@@ -27,7 +27,7 @@ public class FloorDetection : MonoBehaviour
         if (moldyItems.Contains(other.tag))
         {
             other.gameObject.GetComponent<SpawnObjectManager>().spawnNewObject();
-            if (other.tag == "Item" || other.tag == "Knife")
+            if (other.tag == "Item" || other.tag == "Knife" || other.name.Contains("Toast") || other.name.Contains("Coffee"))
             {
                 ChangeMaterial(moldyMat, other.gameObject);
             }
