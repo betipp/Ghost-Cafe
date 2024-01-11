@@ -12,6 +12,7 @@ public class SpawnObjectManager : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        /*
         if (isRespawnableObject && unTouched && other.tag == "Hand")
         {
 
@@ -19,8 +20,18 @@ public class SpawnObjectManager : MonoBehaviour
             StartCoroutine(coroutine);
             //unTouched = false;
 
-        }
+        }*/
 
+    }
+    public void Update()
+    {
+        if (isRespawnableObject && unTouched)
+        {
+
+            checkDistance();
+            //unTouched = false;
+
+        }
     }
 
     public void spawnNewObject()
@@ -37,25 +48,34 @@ public class SpawnObjectManager : MonoBehaviour
 
     }
 
-    private IEnumerator checkDistance()
+    private void checkDistance()
     {
         //Distance between spawn point and current object position
-        float dist = Vector3.Distance(this.gameObject.transform.position, spawnLocation.transform.position);
+
+        /*
         while (dist < 1)
         {
             dist = Vector3.Distance(this.gameObject.transform.position, spawnLocation.transform.position);
-            yield return null;
-        }
+            //yield return null;
+        }*/
         if (unTouched)
         {
-            GameObject newObject = Instantiate(this.gameObject, spawnLocation.transform.position, Quaternion.identity);
-            newObject.GetComponent<Rigidbody>().isKinematic = false;
-            newObject.GetComponent<Rigidbody>().useGravity = true;
-            newObject.GetComponent<SpawnObjectManager>().unTouched = true;
-            newObject.GetComponent<AudioSource>().Play();
-            unTouched = false;
+            float dist = Vector3.Distance(this.gameObject.transform.position, spawnLocation.transform.position);
+            if (dist > 1)
+            {
+
+                GameObject newObject = Instantiate(this.gameObject, spawnLocation.transform.position, Quaternion.identity);
+                newObject.GetComponent<Rigidbody>().isKinematic = false;
+                newObject.GetComponent<Rigidbody>().useGravity = true;
+                newObject.GetComponent<SpawnObjectManager>().unTouched = true;
+                newObject.GetComponent<AudioSource>().Play();
+                unTouched = false;
+            }
+
+
+
         }
-        yield return null;
+        //yield return null;
     }
 
 
