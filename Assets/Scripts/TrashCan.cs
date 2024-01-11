@@ -25,6 +25,7 @@ public class TrashCan : MonoBehaviour
     {
         if (removableItems.Contains(other.tag))
         {
+            other.gameObject.GetComponent<SpawnObjectManager>().spawnNewObject();
             if (other.tag == "Moldy")
             {
                 gameManager.GetComponent<CoinManager>().increaseCoins(5);
