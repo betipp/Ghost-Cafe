@@ -60,7 +60,10 @@ public class PourableDrink : MonoBehaviour
             if (fillTime >= timeToCook)
             {
                 isFilled = true;
-                this.tag = "Prepered";
+                if (this.tag != "Moldy")
+                {
+                    this.tag = "Prepered";
+                }
                 this.name = drinkStream.GetComponent<DrinkStream>().liquid + "Shake";
                 showLiquid();
             }
