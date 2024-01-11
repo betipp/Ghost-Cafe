@@ -15,10 +15,11 @@ public class LanguageManager : MonoBehaviour
     public static bool translation = false;
 
 
-    void Start()
+    void Awake()
     {
 
         translation = PlayerPrefs.GetString("translation") == "True";
+        print("Language managher says " + translation);
         if (translation)
         {
             SLOInstructions.SetActive(true);

@@ -93,6 +93,7 @@ public class ListManager : MonoBehaviour
 
     string getTaskName(String taskName)
     {
+        print("TRANSLATION " + LanguageManager.translation);
         if (LanguageManager.translation)
         {
             switch (taskName)
