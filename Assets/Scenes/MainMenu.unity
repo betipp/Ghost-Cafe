@@ -27102,6 +27102,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SLOImage: {fileID: 908877464}
   ENGImage: {fileID: 331224696}
+  startText: {fileID: 1403236793}
+  settingsText: {fileID: 878756517}
+  exitText: {fileID: 5917151}
+  backText: {fileID: 1861930010}
 --- !u!4 &1084207879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 984a4526ba5436b4baa2e183846d521e, type: 3}
