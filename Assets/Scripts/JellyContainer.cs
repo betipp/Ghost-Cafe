@@ -13,6 +13,8 @@ public class JellyContainer : MonoBehaviour
     {
         if (other.gameObject.tag == "Knife")
         {
+            //You should spawn a new knife before this one gets jelly on it
+            other.gameObject.GetComponent<SpawnObjectManager>().spawnNewObject();
             EnableChildWithName(other.gameObject, jellyType);
             AudioManager.Play("JellySplat");
         }
