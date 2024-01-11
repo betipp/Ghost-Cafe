@@ -89,6 +89,7 @@ public class PourableDrink : MonoBehaviour
             if (eachChild.name == name)
             {
                 eachChild.gameObject.GetComponent<MeshRenderer>().enabled = true;
+                GameManager.GetComponent<TutorialManager>().hideTutorialImage(name);
             }
             else
             {
