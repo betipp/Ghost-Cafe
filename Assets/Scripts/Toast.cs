@@ -15,7 +15,10 @@ public class Toast : MonoBehaviour
             {
                 this.GetComponentInParent<SpawnObjectManager>().spawnNewObject();
                 EnableChildWithName(this.gameObject, jellyType);
-                this.tag = "Prepered";
+                if (this.tag != "Moldy")
+                {
+                    this.tag = "Prepered";
+                }
                 this.name = "Toast" + jellyType;
                 DisableAllJelly(other.gameObject);
                 AudioManager.Play("JellySplat");
