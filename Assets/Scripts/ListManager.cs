@@ -34,7 +34,7 @@ public class ListManager : MonoBehaviour
         for (int i = 0; i < List.Length; i++)
         {
             //Go thru the list of taska and figure out if the colliding object in one of them, if that is so consider the task done
-            if (other.tag == "Prepered" && other.name.Contains(List[i]))
+            if (other.tag == "Prepered" && other.name.Contains(List[i]) && !ListStatus[i])
             {
                 ListStatus[i] = true;
                 AudioManager.Play("Done");
@@ -93,7 +93,6 @@ public class ListManager : MonoBehaviour
 
     string getTaskName(String taskName)
     {
-        print("TRANSLATION " + LanguageManager.translation);
         if (LanguageManager.translation)
         {
             switch (taskName)

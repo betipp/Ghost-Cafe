@@ -19,7 +19,6 @@ public class LanguageManager : MonoBehaviour
     {
 
         translation = PlayerPrefs.GetString("translation") == "True";
-        print("Language managher says " + translation);
         if (translation)
         {
             SLOInstructions.SetActive(true);
