@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class LanguageToggle : MonoBehaviour
 {
-    public static bool translation = false;
+    public static bool translation = true;
 
     [SerializeField]
     public UnityEngine.UI.Image SLOImage;
