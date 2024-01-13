@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClockOutMachine : MonoBehaviour
 {
@@ -8,12 +9,8 @@ public class ClockOutMachine : MonoBehaviour
     {
         if (other.tag == "Hand")
         {
-            quitGame();
+            SceneManager.LoadScene("MainMenu");
         }
     }
 
-    public void quitGame()
-    {
-        Application.Quit();
-    }
 }
