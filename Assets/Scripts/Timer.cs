@@ -12,12 +12,16 @@ public class Timer : MonoBehaviour
     [SerializeField] private UnityEngine.UI.Image uiClock;
     [SerializeField] private TMPro.TextMeshProUGUI uiText;
 
+    [SerializeField] private UnityEngine.UI.Image uiFillHand;
+    [SerializeField] private UnityEngine.UI.Image uiClockHand;
+    [SerializeField] private TMPro.TextMeshProUGUI uiTextHand;
+
     public int Duration;
     public int remainingDuration;
 
     public bool Pause;
 
-    bool isFreePlayEnabled = true;
+    bool isFreePlayEnabled;
 
     public IEnumerator currentCoroutine;
 
@@ -30,6 +34,9 @@ public class Timer : MonoBehaviour
             uiFill.enabled = false;
             uiClock.enabled = false;
             uiText.enabled = false;
+            uiFillHand.enabled = false;
+            uiClockHand.enabled = false;
+            uiTextHand.enabled = false;
         }
         else
         {
@@ -53,7 +60,9 @@ public class Timer : MonoBehaviour
             if (!Pause)
             {
                 uiText.text = $"{remainingDuration / 60:00} : {remainingDuration % 60:00}";
+                uiTextHand.text = uiText.text;
                 uiFill.fillAmount = Mathf.InverseLerp(0, Duration, remainingDuration);
+                uiFillHand.fillAmount = uiFill.fillAmount;
                 remainingDuration--;
                 yield return new WaitForSeconds(1f);
             }
