@@ -196,6 +196,9 @@ public class ListManager : MonoBehaviour
         orderItems = new GameObject[] { null, null, null };
         ListStatus = new bool[] { false, false, false };
     }
+
+
+
     public bool areAllTrue()
     {
         for (int i = 0; i < ListStatus.Length; ++i)

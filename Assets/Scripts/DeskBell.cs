@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 
 public class DeskBell : MonoBehaviour
@@ -25,26 +26,46 @@ public class DeskBell : MonoBehaviour
     {
         if (other.gameObject.tag == "Hand")
         {
-            bool taskComplete = gameManager.GetComponent<ListManager>().areAllTrue();
-            if (taskComplete)
-            {
-
-                //Chose new ghost
-                ghost.setGhostType(choseRandomGhostType());
-                ghost.setGhostModel();
-
-                //Chose new task
-                gameManager.GetComponent<ListManager>().removeOrderItems();
-                gameManager.GetComponent<ListManager>().fillListWithTasks();
-                gameManager.GetComponent<CoinManager>().increaseCoins(50);
-                AudioManager.Play("Coins");
-                AudioManager.Play("Boop");
-                coins.Play();
-
-
-            }
+            newTask();
         }
     }
+
+    void newTask()
+    {
+        bool taskComplete = gameManager.GetComponent<ListManager>().areAllTrue();
+        if (taskComplete)
+        {
+            this.GetComponent<Timer>().remainingDuration = 0;
+
+            //Chose new ghost
+            ghost.setGhostType(choseRandomGhostType());
+            ghost.setGhostModel();
+
+            //Chose new task
+            gameManager.GetComponent<ListManager>().removeOrderItems();
+            gameManager.GetComponent<ListManager>().fillListWithTasks();
+            gameManager.GetComponent<CoinManager>().increaseCoins(50);
+            AudioManager.Play("Coins");
+            AudioManager.Play("Boop");
+            coins.Play();
+        }
+    }
+
+    public void forceNewTask()
+    {
+
+        //Chose new ghost
+        ghost.setGhostType(choseRandomGhostType());
+        ghost.setGhostModel();
+
+        //Chose new task
+        gameManager.GetComponent<ListManager>().removeOrderItems();
+        gameManager.GetComponent<ListManager>().fillListWithTasks();
+        AudioManager.Play("Down");
+
+    }
+
+
 
 
     Ghost.GhostType choseRandomGhostType()

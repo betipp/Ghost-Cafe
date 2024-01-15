@@ -22,6 +22,10 @@ public class LanguageToggle : MonoBehaviour
     public TMPro.TextMeshProUGUI exitText;
     [SerializeField]
     public TMPro.TextMeshProUGUI backText;
+    [SerializeField]
+    public TMPro.TextMeshProUGUI backTextGameMode;
+    [SerializeField]
+    public TMPro.TextMeshProUGUI titleGameMode;
 
 
 
@@ -74,6 +78,7 @@ public class LanguageToggle : MonoBehaviour
             settingsText.text = "Nastavitve";
             exitText.text = "Izhod";
             backText.text = "Nazaj";
+            titleGameMode.text = "Način igre";
         }//ENG
         else
         {
@@ -81,6 +86,8 @@ public class LanguageToggle : MonoBehaviour
             settingsText.text = "Settings";
             exitText.text = "Exit";
             backText.text = "Back";
+            backTextGameMode.text = "Back";
+            titleGameMode.text = "Gamemode";
         }
     }
 
