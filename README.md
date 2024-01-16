@@ -16,14 +16,16 @@ A new update coming to Ghost Cafe!
 - FRI branding 🎓
 - Restocking feature 💸
 - Trashcan 🗑️
+- Moldy items 🦠
+- Point system 🌟
+- Timer mode ⌛
+- Tutorials 🦮
+- New guests! 👻🏫
 
 ### COMING SOON 🗃️
-
-- Cafe overhaul 🏡
-- Gameplay loop 🕹️
-- Fridge 🥓
-- Sandwiches 🥪
-- Coffee mixing ☕
+- New liquid system ☕
+- Updates to mold 🧫
+- More more more guests! 👻👻👻
 
 
 
@@ -31,7 +33,7 @@ A new update coming to Ghost Cafe!
 
 - The trigger on the controllers is used for movement and grabbing items.
 - The cashier monitor serves to provide a list of customer items.
-- Once you complete an order it is crossed out of the list.
+- Once you complete an order it is crossed out of the list and you are given points.
 - When you complete the order ring the bell next to the customer.
 - To exit the game use the clock-out machine by the door.
 
@@ -40,6 +42,7 @@ A new update coming to Ghost Cafe!
 ## Gameplay 🎮
 
 The goal of the game is to cook and prepare food according to the customer's order.
+Test your skills in timer mode and collect as many points as you can.
 
 ### Coffee machine ☕
 
