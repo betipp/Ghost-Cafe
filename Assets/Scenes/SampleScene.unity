@@ -7892,7 +7892,7 @@ MonoBehaviour:
   uiFillHand: {fileID: 444189101}
   uiClockHand: {fileID: 1446231008}
   uiTextHand: {fileID: 209187625}
-  Duration: 10
+  Duration: 120
   remainingDuration: 0
   Pause: 0
 --- !u!1 &313485134 stripped

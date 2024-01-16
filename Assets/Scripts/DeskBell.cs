@@ -12,6 +12,9 @@ public class DeskBell : MonoBehaviour
 
     Ghost ghost;
 
+    private int tasksDone = 0;
+    private int rewardAmount = 50;
+
 
     void Start()
     {
@@ -35,6 +38,18 @@ public class DeskBell : MonoBehaviour
         bool taskComplete = gameManager.GetComponent<ListManager>().areAllTrue();
         if (taskComplete)
         {
+            tasksDone++;
+            if (tasksDone == 5)
+            {
+                rewardAmount = 80;
+                this.GetComponent<Timer>().Duration = 90;
+            }
+            if (tasksDone == 10)
+            {
+                this.GetComponent<Timer>().Duration = 60;
+                rewardAmount = 120;
+            }
+
             this.GetComponent<Timer>().remainingDuration = 0;
 
             //Chose new ghost
@@ -44,10 +59,11 @@ public class DeskBell : MonoBehaviour
             //Chose new task
             gameManager.GetComponent<ListManager>().removeOrderItems();
             gameManager.GetComponent<ListManager>().fillListWithTasks();
-            gameManager.GetComponent<CoinManager>().increaseCoins(50);
+            gameManager.GetComponent<CoinManager>().increaseCoins(rewardAmount);
             AudioManager.Play("Coins");
             AudioManager.Play("Boop");
             coins.Play();
+
         }
     }
 

@@ -28,6 +28,7 @@ public class ListManager : MonoBehaviour
 
 
 
+
     void OnTriggerEnter(Collider other)
     {
 
@@ -47,6 +48,7 @@ public class ListManager : MonoBehaviour
                 other.gameObject.transform.rotation = orderItemsLocation[i].transform.rotation;
                 other.gameObject.GetComponent<Rigidbody>().isKinematic = true;
                 other.tag = "TaskDone";
+
 
             }
         }
