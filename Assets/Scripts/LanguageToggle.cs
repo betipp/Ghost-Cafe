@@ -27,6 +27,12 @@ public class LanguageToggle : MonoBehaviour
     [SerializeField]
     public TMPro.TextMeshProUGUI titleGameMode;
 
+    [SerializeField]
+    public TMPro.TextMeshProUGUI titleTutorial;
+
+    [SerializeField]
+    public TMPro.TextMeshProUGUI backTextTutorial;
+
 
 
 
@@ -79,6 +85,8 @@ public class LanguageToggle : MonoBehaviour
             exitText.text = "Izhod";
             backText.text = "Nazaj";
             titleGameMode.text = "Način igre";
+            titleTutorial.text = "Pomoč v igri";
+            backTextTutorial.text = "Nazaj";
         }//ENG
         else
         {
@@ -88,6 +96,8 @@ public class LanguageToggle : MonoBehaviour
             backText.text = "Back";
             backTextGameMode.text = "Back";
             titleGameMode.text = "Gamemode";
+            titleTutorial.text = "Tutorial";
+            backTextTutorial.text = "Back";
         }
     }
 

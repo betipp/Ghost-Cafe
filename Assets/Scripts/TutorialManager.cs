@@ -12,6 +12,28 @@ public class TutorialManager : MonoBehaviour
     [SerializeField]
     public UnityEngine.UI.Image JuiceTutorialImage;
 
+    private bool isTutorialEnabled;
+
+    void Awake()
+    {
+
+        isTutorialEnabled = PlayerPrefs.GetString("isTutorialEnabled") == "True";
+        if (!isTutorialEnabled)
+        {
+            ShakeTutorialImage.enabled = false;
+            CoffeeTutorialImage.enabled = false;
+            JuiceTutorialImage.enabled = false;
+        }
+        else if (isTutorialEnabled)
+        {
+            ShakeTutorialImage.enabled = true;
+            CoffeeTutorialImage.enabled = true;
+            JuiceTutorialImage.enabled = true;
+        }
+
+    }
+
+
     public void hideTutorialImage(String juiceName)
     {
         switch (juiceName)
