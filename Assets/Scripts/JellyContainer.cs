@@ -11,7 +11,7 @@ public class JellyContainer : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Knife")
+        if (other.gameObject.tag == "Knife" && this.transform.parent.tag != ("Moldy"))
         {
             //You should spawn a new knife before this one gets jelly on it
             other.gameObject.GetComponent<SpawnObjectManager>().spawnNewObject();
