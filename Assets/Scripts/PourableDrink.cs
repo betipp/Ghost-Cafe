@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 using UnityEngine.XR.Interaction.Toolkit;
 
 
@@ -20,7 +22,6 @@ public class PourableDrink : MonoBehaviour
 
     [SerializeField]
     private GameObject lid;
-
 
 
 
@@ -57,6 +58,7 @@ public class PourableDrink : MonoBehaviour
         if (onPrepStation && !isFilled && isLiquidPouringOnStream())
         {
             fillTime += Time.deltaTime;
+
             if (fillTime >= timeToCook)
             {
                 isFilled = true;
@@ -65,9 +67,59 @@ public class PourableDrink : MonoBehaviour
                     this.tag = "Prepered";
                 }
                 this.name = drinkStream.GetComponent<DrinkStream>().liquid + "Shake";
-                showLiquid();
+                showLiquid("high", true);
+            }
+            else if (fillTime >= timeToCook / 3 * 2)
+            {
+                showLiquid("medium", false);
+            }
+            else if (fillTime >= timeToCook / 3)
+            {
+                showLiquid("low", false);
             }
         }
+    }
+
+    void setLiquidLevels(String level, GameObject liquid, string liquidName)
+    {
+        Vector3 pos = liquid.transform.localPosition;
+
+
+        if (liquidName == "Coffee")
+        {
+            switch (level)
+            {
+                case "low":
+                    pos.y = -0.413f;
+                    break;
+                case "medium":
+                    pos.y = 0.097f;
+                    break;
+                case "high":
+                    pos.y = 0.4458094f;
+                    break;
+            }
+        }
+        else
+        {
+            switch (level)
+            {
+                case "low":
+                    pos.y = -0.839f;
+                    liquid.transform.localScale = new Vector3(0.87626f, 0.2485486f, 0.87626f);
+                    break;
+                case "medium":
+                    pos.y = -0.55f;
+                    liquid.transform.localScale = new Vector3(0.87626f, 0.5180995f, 0.87626f);
+                    break;
+                case "high":
+                    pos.y = 0;
+                    liquid.transform.localScale = new Vector3(1, 1, 1);
+                    break;
+            }
+        }
+        liquid.transform.localPosition = pos;
+
     }
 
     bool isLiquidPouringOnStream()
@@ -79,12 +131,12 @@ public class PourableDrink : MonoBehaviour
         return false;
     }
 
-    void showLiquid()
+    void showLiquid(string liquidLevel, bool showLid)
     {
-        EnableChildWithName(this.gameObject, drinkStream.GetComponent<DrinkStream>().liquid);
+        EnableChildWithName(this.gameObject, drinkStream.GetComponent<DrinkStream>().liquid, liquidLevel, showLid);
     }
 
-    void EnableChildWithName(GameObject obj, string name)
+    void EnableChildWithName(GameObject obj, string name, string liquidLevel, bool showLid)
     {
         //Loop thru the childeren and disable all but the chosen child
         foreach (Transform eachChild in obj.transform)
@@ -93,12 +145,13 @@ public class PourableDrink : MonoBehaviour
             {
                 eachChild.gameObject.GetComponent<MeshRenderer>().enabled = true;
                 GameManager.GetComponent<TutorialManager>().hideTutorialImage(name);
+                setLiquidLevels(liquidLevel, eachChild.gameObject, name);
             }
             else
             {
                 eachChild.gameObject.GetComponent<MeshRenderer>().enabled = false;
             }
-            if (lid != null)
+            if (lid != null && showLid)
             {
                 lid.gameObject.GetComponent<MeshRenderer>().enabled = true;
             }
