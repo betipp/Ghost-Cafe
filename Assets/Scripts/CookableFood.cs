@@ -20,6 +20,7 @@ public class CookableFood : MonoBehaviour
     {
         if (collisionInfo.gameObject.tag == cookingStation)
         {
+            gameObject.GetComponent<SpawnObjectManager>().spawnNewObject();
             cooking = true;
 
         }
